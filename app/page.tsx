@@ -27,7 +27,7 @@ import { Chart } from "./@components/chart"
 export default function Home() {
     return (
         <main className="flex flex-col">
-            <section className="relative flex min-h-screen flex-col items-center justify-center gap-8 p-8">
+            <section className="relative flex min-h-screen flex-col items-center justify-center gap-4 p-4 md:gap-8 md:p-8">
                 <Chart />
 
                 <div className="flex items-center gap-2 rounded-full border border-cyan-500 border-solid bg-cyan-500/20 p-2">
@@ -37,14 +37,14 @@ export default function Home() {
                     </span>
                 </div>
 
-                <h1 className="text-center font-extrabold text-7xl text-white">
+                <h1 className="text-center font-extrabold text-4xl text-white md:text-7xl">
                     Opere Futuros na <br />
                     <span className="bg-gradient-to-r from-red-500 to-orange-700 bg-clip-text text-transparent">
                         Velocidade da Luz
                     </span>
                 </h1>
 
-                <div className="text-center text-white/80">
+                <div className="text-center text-sm text-white/80 md:text-base">
                     <p>
                         Hospedagem VPS de alta performance localizada ao Lado da
                         CME.
@@ -55,7 +55,7 @@ export default function Home() {
                     </p>
                 </div>
 
-                <div className="flex gap-4">
+                <div className="flex flex-col gap-4 md:flex-row">
                     <Button asChild>
                         <Link href="#">Quero operar sem lag</Link>
                     </Button>
@@ -64,37 +64,37 @@ export default function Home() {
                     </Button>
                 </div>
 
-                <div className="flex gap-8">
-                    <div className="flex items-center gap-2 text-white/80">
-                        <Timer className="size-8" />
+                <div className="flex flex-col gap-4 md:flex-row md:gap-8">
+                    <div className="flex items-center gap-2 text-sm text-white/80 md:text-base">
+                        <Timer className="size-6 md:size-8" />
                         <span>1ms de latência</span>
                     </div>
 
-                    <div className="flex items-center gap-2 text-white/80">
-                        <Database className="size-8" />
+                    <div className="flex items-center gap-2 text-sm text-white/80 md:text-base">
+                        <Database className="size-6 md:size-8" />
                         <span>Data Center T1</span>
                     </div>
 
-                    <div className="flex items-center gap-2 text-white/80">
-                        <Shield className="size-8" />
+                    <div className="flex items-center gap-2 text-sm text-white/80 md:text-base">
+                        <Shield className="size-6 md:size-8" />
                         <span>DDoS Protection</span>
                     </div>
                 </div>
             </section>
 
             <div className="bg-slate-900">
-                <section className="m-auto flex max-w-7xl flex-col gap-8 px-8 py-16">
+                <section className="m-auto flex max-w-7xl flex-col gap-4 px-4 py-8 md:gap-8 md:px-8 md:py-16">
                     <header className="flex flex-col gap-2 text-center">
-                        <h2 className="font-bold text-4xl text-white">
+                        <h2 className="font-bold text-2xl text-white md:text-4xl">
                             Pare de perder dinheiro com problemas técnicos
                         </h2>
-                        <p className="text-white/80">
+                        <p className="text-sm text-white/80 md:text-base">
                             O mercado não perdoa falhas. Elimine os riscos que
                             destroem a rentabilidade do seu trading diário.
                         </p>
                     </header>
 
-                    <div className="grid grid-cols-3 gap-4">
+                    <div className="grid grid-cols-1 gap-4 md:grid-cols-3">
                         <CardV1
                             icon={MoveDownRight}
                             title="Slippage Excessivo"
@@ -122,22 +122,22 @@ export default function Home() {
                 </section>
             </div>
 
-            <section className="m-auto flex max-w-7xl flex-col gap-8 px-8 py-16">
+            <section className="m-auto flex max-w-7xl flex-col gap-4 px-4 py-8 md:gap-8 md:px-8 md:py-16">
                 <header className="flex flex-col gap-2 text-center">
-                    <h2 className="font-bold text-4xl text-white">
+                    <h2 className="font-bold text-2xl text-white md:text-4xl">
                         A{" "}
                         <span className="text-center text-cyan-400">
                             Vantagem Injusta
                         </span>{" "}
                         do Trader Profissional
                     </h2>
-                    <p className="text-white/80">
+                    <p className="text-sm text-white/80 md:text-base">
                         Tecnologia de ponta otimizada especificamente para
                         plataformas de trading algorítmico e manual.
                     </p>
                 </header>
 
-                <div className="grid grid-cols-4 gap-4">
+                <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-4">
                     <CardV2
                         icon={ShieldUser}
                         title="I/O Blindado"
@@ -172,7 +172,7 @@ export default function Home() {
             </section>
 
             <div className="bg-slate-900">
-                <section className="m-auto grid max-w-7xl grid-cols-2 gap-8 px-8 py-16">
+                <section className="m-auto grid max-w-7xl grid-cols-1 gap-4 px-4 py-8 md:gap-8 md:px-8 md:py-16 lg:grid-cols-2">
                     <div className="grid aspect-video grid-rows-[auto_1fr] gap-4 rounded border border-slate-800 border-solid bg-zinc-950 p-8">
                         <header className="flex items-center justify-between">
                             <div className="grid grid-cols-3 gap-2">
@@ -186,27 +186,27 @@ export default function Home() {
                             </span>
                         </header>
 
-                        <div className="flex flex-col justify-center gap-8">
-                            <div className="flex items-center justify-between border-b border-b-white/10 border-solid pb-2 text-white uppercase">
+                        <div className="flex flex-col justify-center gap-4 md:gap-8">
+                            <div className="flex items-center justify-between border-b border-b-white/10 border-solid pb-2 text-white text-xs uppercase md:text-sm">
                                 <span>Processador</span>
                                 <span className="font-bold">
                                     AMD Epyc 7003 Series
                                 </span>
                             </div>
 
-                            <div className="flex items-center justify-between border-b border-b-white/10 border-solid pb-2 text-white uppercase">
+                            <div className="flex items-center justify-between border-b border-b-white/10 border-solid pb-2 text-white text-xs uppercase md:text-sm">
                                 <span>Memória</span>
                                 <span className="font-bold">DDR4 ECC Reg</span>
                             </div>
 
-                            <div className="flex items-center justify-between border-b border-b-white/10 border-solid pb-2 text-white uppercase">
+                            <div className="flex items-center justify-between border-b border-b-white/10 border-solid pb-2 text-white text-xs uppercase md:text-sm">
                                 <span>Armazenamento</span>
                                 <span className="font-bold">
                                     NVMe SSD Raid 10
                                 </span>
                             </div>
 
-                            <div className="flex items-center justify-between border-b border-b-white/10 border-solid pb-2 text-white uppercase">
+                            <div className="flex items-center justify-between border-b border-b-white/10 border-solid pb-2 text-white text-xs uppercase md:text-sm">
                                 <span>Uplink</span>
                                 <span className="font-bold">
                                     10 Gbps Dedicado
@@ -215,7 +215,7 @@ export default function Home() {
                         </div>
                     </div>
 
-                    <div className="flex flex-col gap-8">
+                    <div className="flex flex-col gap-4 md:gap-8">
                         <div className="flex items-center gap-2 self-start rounded-full border border-green-500 border-solid bg-green-500/20 p-2">
                             <span className="size-2 rounded-full bg-green-500" />
                             <span className="font-bold text-green-500 text-xs uppercase">
@@ -224,10 +224,10 @@ export default function Home() {
                         </div>
 
                         <div className="flex flex-col">
-                            <h2 className="font-bold text-4xl text-white">
+                            <h2 className="font-bold text-2xl text-white md:text-4xl">
                                 Potência Bruta para seus algoritmos
                             </h2>
-                            <p className="text-white/80">
+                            <p className="text-sm text-white/80 md:text-base">
                                 Não usamos hardware de desktop. Nossos
                                 servidores são equipamentos de nível empresarial
                                 (Data Center Grade) localizados no coração
@@ -257,25 +257,25 @@ export default function Home() {
                 </section>
             </div>
 
-            <section className="flex flex-col items-center gap-8 px-8 py-16">
+            <section className="flex flex-col items-center gap-4 px-4 py-8 md:gap-8 md:px-8 md:py-16">
                 <header className="flex flex-col text-center">
-                    <h2 className="font-bold text-4xl text-white">
+                    <h2 className="font-bold text-2xl text-white md:text-4xl">
                         Investimento Pessoal
                     </h2>
-                    <p className="text-white/80">
+                    <p className="text-sm text-white/80 md:text-base">
                         Simples, transparente e sem fidelidade.
                     </p>
                 </header>
 
-                <div className="grid grid-cols-2 items-center gap-8 rounded border border-orange-500 border-solid p-8">
+                <div className="grid grid-cols-1 items-center gap-4 rounded border border-orange-500 border-solid p-4 md:gap-8 md:p-8 lg:grid-cols-2">
                     <div className="flex flex-col gap-4">
                         <div className="flex flex-col gap-2">
-                            <p className="text-2xl text-white">
+                            <p className="text-white text-xl md:text-2xl">
                                 Plano Trader Pro
                             </p>
                             <span className="text-white/80 text-xs">
                                 R$
-                                <span className="font-bold text-6xl text-white">
+                                <span className="font-bold text-4xl text-white md:text-6xl">
                                     150,00
                                 </span>
                                 /mês
@@ -306,16 +306,12 @@ export default function Home() {
             </section>
 
             <div className="bg-slate-900">
-                <section className="m-auto flex max-w-7xl flex-col items-center gap-8 px-8 py-16">
-                    <h2 className="text-center font-bold text-4xl text-white">
+                <section className="m-auto flex max-w-7xl flex-col items-center gap-4 px-4 py-8 md:gap-8 md:px-8 md:py-16">
+                    <h2 className="text-center font-bold text-2xl text-white md:text-4xl">
                         Perguntas Frequentes
                     </h2>
 
-                    <Accordion
-                        className="min-w-7xl max-w-7xl"
-                        type="single"
-                        collapsible
-                    >
+                    <Accordion className="w-full" type="single" collapsible>
                         <AccordionItem
                             className="mb-4 border-solid border-none bg-zinc-950 p-4 text-white"
                             value="item-1"
