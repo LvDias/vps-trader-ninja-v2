@@ -9,8 +9,8 @@ export function Header() {
                     VPS Trader Ninja
                 </span>
 
-                <Button asChild>
-                    <Link href="#">Assinar Agora</Link>
+                <Button size="lg" asChild>
+                    <Link href={process.env.LINK_CHECKOUT!}>Assinar Agora</Link>
                 </Button>
             </div>
         </header>

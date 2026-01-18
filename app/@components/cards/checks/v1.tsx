@@ -7,7 +7,7 @@ export interface CardCheckV1Props {
 
 export function CardCheckV1({ title, desc }: CardCheckV1Props) {
     return (
-        <div className="flex gap-4">
+        <div className="flex items-center gap-4">
             <div className="flex size-6 shrink-0 items-center justify-center rounded-full bg-green-500">
                 <Check className="size-3 text-zinc-950" />
             </div>

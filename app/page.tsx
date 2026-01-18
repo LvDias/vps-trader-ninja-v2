@@ -44,7 +44,7 @@ export default function Home() {
                     </span>
                 </h1>
 
-                <div className="text-center text-sm text-white/80 md:text-base">
+                <div className="flex max-w-2xs flex-col gap-2 text-center text-sm text-white/80 md:max-w-max md:text-base">
                     <p>
                         Hospedagem VPS de alta performance localizada ao Lado da
                         CME.
@@ -55,28 +55,25 @@ export default function Home() {
                     </p>
                 </div>
 
-                <div className="flex flex-col gap-4 md:flex-row">
-                    <Button asChild>
-                        <Link href="#">Quero operar sem lag</Link>
-                    </Button>
-                    <Button variant="outline" asChild>
-                        <Link href="#">Ver especificações</Link>
-                    </Button>
-                </div>
+                <Button className="z-10" size="lg" asChild>
+                    <Link href={process.env.LINK_CHECKOUT!}>
+                        Quero operar sem lag
+                    </Link>
+                </Button>
 
-                <div className="flex flex-col gap-4 md:flex-row md:gap-8">
+                <div className="hidden gap-8 md:flex">
                     <div className="flex items-center gap-2 text-sm text-white/80 md:text-base">
-                        <Timer className="size-6 md:size-8" />
+                        <Timer className="size-8" />
                         <span>1ms de latência</span>
                     </div>
 
-                    <div className="flex items-center gap-2 text-sm text-white/80 md:text-base">
-                        <Database className="size-6 md:size-8" />
+                    <div className="flex items-center gap-2 text-sm text-white/80">
+                        <Database className="size-8" />
                         <span>Data Center T1</span>
                     </div>
 
-                    <div className="flex items-center gap-2 text-sm text-white/80 md:text-base">
-                        <Shield className="size-6 md:size-8" />
+                    <div className="flex items-center gap-2 text-sm text-white/80">
+                        <Shield className="size-8" />
                         <span>DDoS Protection</span>
                     </div>
                 </div>
@@ -171,9 +168,9 @@ export default function Home() {
                 </div>
             </section>
 
-            <div className="bg-slate-900">
+            <div className="bg-slate-900" id="specifications">
                 <section className="m-auto grid max-w-7xl grid-cols-1 gap-4 px-4 py-8 md:gap-8 md:px-8 md:py-16 lg:grid-cols-2">
-                    <div className="grid aspect-video grid-rows-[auto_1fr] gap-4 rounded border border-slate-800 border-solid bg-zinc-950 p-8">
+                    <div className="grid aspect-video grid-rows-[auto_1fr] gap-8 rounded border border-slate-800 border-solid bg-zinc-950 p-8">
                         <header className="flex items-center justify-between">
                             <div className="grid grid-cols-3 gap-2">
                                 <span className="size-2 rounded-full bg-red-500" />
@@ -216,14 +213,14 @@ export default function Home() {
                     </div>
 
                     <div className="flex flex-col gap-4 md:gap-8">
-                        <div className="flex items-center gap-2 self-start rounded-full border border-green-500 border-solid bg-green-500/20 p-2">
+                        <div className="hidden items-center gap-2 self-center rounded-full border border-green-500 border-solid bg-green-500/20 p-2 md:flex md:self-start">
                             <span className="size-2 rounded-full bg-green-500" />
                             <span className="font-bold text-green-500 text-xs uppercase">
                                 Hardware Enterprise
                             </span>
                         </div>
 
-                        <div className="flex flex-col">
+                        <div className="flex flex-col gap-4 text-center md:text-left">
                             <h2 className="font-bold text-2xl text-white md:text-4xl">
                                 Potência Bruta para seus algoritmos
                             </h2>
@@ -269,7 +266,7 @@ export default function Home() {
 
                 <div className="grid grid-cols-1 items-center gap-4 rounded border border-orange-500 border-solid p-4 md:gap-8 md:p-8 lg:grid-cols-2">
                     <div className="flex flex-col gap-4">
-                        <div className="flex flex-col gap-2">
+                        <div className="flex flex-col items-center gap-2 md:items-start">
                             <p className="text-white text-xl md:text-2xl">
                                 Plano Trader Pro
                             </p>
@@ -283,7 +280,9 @@ export default function Home() {
                         </div>
                         <div className="flex flex-col gap-2">
                             <Button size="lg" asChild>
-                                <Link href="#">Assinar Agora</Link>
+                                <Link href={process.env.LINK_CHECKOUT!}>
+                                    Assinar Agora
+                                </Link>
                             </Button>
                             <p className="text-white/50 text-xs">
                                 Cancelamento gratuito a qualquer momento.

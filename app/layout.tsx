@@ -23,6 +23,7 @@ export default function RootLayout({
         <html lang="pt-BR">
             <body
                 className={`${roboto.variable} flex flex-col bg-zinc-950 antialiased`}
+                data-scroll-behavior="smooth"
             >
                 <Header />
                 {children}
