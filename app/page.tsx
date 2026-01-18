@@ -316,14 +316,50 @@ export default function Home() {
                             value="item-1"
                         >
                             <AccordionTrigger>
-                                Qual é a latência média para o NinjaTrader/CME
+                                Q1: Como eu conecto na VPS pelo celular ou
+                                tablet?
                             </AccordionTrigger>
                             <AccordionContent>
-                                Lorem, ipsum dolor sit amet consectetur
-                                adipisicing elit. Corporis, quae non nemo fuga
-                                aliquid debitis quo delectus natus obcaecati
-                                omnis, qui aperiam ullam perspiciatis!
-                                Architecto doloremque hic explicabo at amet.
+                                <div className="flex flex-col gap-4">
+                                    <p>
+                                        R: É muito simples! Você usa o
+                                        aplicativo “Windows App” (disponível
+                                        gratuitamente para iOS e Android).
+                                    </p>
+                                    <p>Passo a passo:</p>
+                                    <ul>
+                                        <ol>
+                                            - Baixe o app "Windows App" na App
+                                            Store ou Google Play
+                                        </ol>
+                                        <ol>
+                                            - Após a contratação da VPS, você
+                                            recebe as credenciais de acesso (IP,
+                                            usuário e senha) via E-mail.
+                                        </ol>
+                                        <ol>
+                                            - Abra o app, toque em "+" para
+                                            adicionar uma nova conexão
+                                        </ol>
+                                        <ol>
+                                            - Cole o endereço IP que enviamos e
+                                            suas credenciais
+                                        </ol>
+                                        <ol>
+                                            - Pronto! Você terá acesso total
+                                            Windows e ao NinjaTrader como se
+                                            estivesse em um desktop de 12
+                                            núcleos
+                                        </ol>
+                                    </ul>
+                                    <p>
+                                        Dica: Recomendamos usar uma tela de pelo
+                                        menos 10" (tablet) para melhor
+                                        visualização dos gráficos, mas é
+                                        perfeitamente possível operar até de um
+                                        smartphone em situações de emergência.
+                                    </p>
+                                </div>
                             </AccordionContent>
                         </AccordionItem>
 
@@ -332,15 +368,43 @@ export default function Home() {
                             value="item-2"
                         >
                             <AccordionTrigger>
-                                Posso instalar outros softwares além do
-                                NinjaTrader?
+                                Q2: É difícil configurar meu Replikanto ou
+                                outros plugins na VPS?
                             </AccordionTrigger>
                             <AccordionContent>
-                                Lorem, ipsum dolor sit amet consectetur
-                                adipisicing elit. Corporis, quae non nemo fuga
-                                aliquid debitis quo delectus natus obcaecati
-                                omnis, qui aperiam ullam perspiciatis!
-                                Architecto doloremque hic explicabo at amet.
+                                <div className="flex flex-col gap-4">
+                                    <p>
+                                        R: Não! O processo é idêntico ao que
+                                        você já faz no seu PC local.
+                                    </p>
+                                    <p>
+                                        O NinjaTrader já vem instalado e
+                                        otimizado na VPS. Para adicionar o
+                                        Replikanto (ou qualquer outro
+                                        plugin/indicador):
+                                    </p>
+                                    <ul>
+                                        <ol>- Acesse a VPS normalmente</ol>
+                                        <ol>- Abra o NinjaTrader</ol>
+                                        <ol>
+                                            - Vá em Tools &gt; Import &gt;
+                                            NinjaScript Add-On
+                                        </ol>
+                                        <ol>
+                                            - Selecione o arquivo .zip do seu
+                                            plugin
+                                        </ol>
+                                        <ol>- Reinicie o NinjaTrader</ol>
+                                    </ul>
+                                    <p>
+                                        E se você tiver dúvida? Nosso suporte
+                                        via WhatsApp te guia em minutos (não em
+                                        horas). Nossa equipe conhece NinjaTrader
+                                        profundamente e já configurou centenas
+                                        de Replikanto, Order Flow, Market
+                                        Profile e outros add-ons.
+                                    </p>
+                                </div>
                             </AccordionContent>
                         </AccordionItem>
 
@@ -349,14 +413,33 @@ export default function Home() {
                             value="item-3"
                         >
                             <AccordionTrigger>
-                                Como acesso a VPS?
+                                Q3: Posso usar minha licença do NinjaTrader na
+                                VPS?
                             </AccordionTrigger>
                             <AccordionContent>
-                                Lorem, ipsum dolor sit amet consectetur
-                                adipisicing elit. Corporis, quae non nemo fuga
-                                aliquid debitis quo delectus natus obcaecati
-                                omnis, qui aperiam ullam perspiciatis!
-                                Architecto doloremque hic explicabo at amet.
+                                <div className="flex flex-col gap-4">
+                                    <p>
+                                        R: Sim, perfeitamente! Você usa a mesma
+                                        licença que já possui.
+                                    </p>
+                                    <p>
+                                        Basta fazer login com sua conta do
+                                        NinjaTrader dentro da VPS. A política da
+                                        NinjaTrader permite que você use sua
+                                        licença em até 2 máquinas
+                                        simultaneamente (seu PC local + a VPS,
+                                        por exemplo).
+                                    </p>
+                                    <p>
+                                        Importante: Se você usa a versão
+                                        gratuita (Sim Feed ou dados atrasados),
+                                        também funciona normalmente. Se usa
+                                        provedores de dados como CQG, Rithmic,
+                                        Kinetick, etc., basta conectar suas
+                                        credenciais dentro da VPS como faria em
+                                        qualquer computador.
+                                    </p>
+                                </div>
                             </AccordionContent>
                         </AccordionItem>
 
@@ -365,14 +448,437 @@ export default function Home() {
                             value="item-4"
                         >
                             <AccordionTrigger>
-                                Existe contrato de fidelidade?
+                                Q4: E se eu tiver problemas técnicos? Vocês
+                                resolvem?
                             </AccordionTrigger>
                             <AccordionContent>
-                                Lorem, ipsum dolor sit amet consectetur
-                                adipisicing elit. Corporis, quae non nemo fuga
-                                aliquid debitis quo delectus natus obcaecati
-                                omnis, qui aperiam ullam perspiciatis!
-                                Architecto doloremque hic explicabo at amet.
+                                <div className="flex flex-col gap-4">
+                                    <p>
+                                        R: Absolutamente. E aqui está um dos
+                                        nossos maiores diferenciais:
+                                    </p>
+                                    <p>
+                                        Nosso suporte NÃO é genérico de TI.
+                                        Somos programadores especializados em
+                                        NinjaTrader. Entendemos de:
+                                    </p>
+                                    <ul>
+                                        <ol>
+                                            Configuração de Data Feeds (CQG,
+                                            Rithmic, Kinetick)
+                                        </ol>
+                                        <ol>
+                                            Instalação de indicadores e
+                                            estratégias automatizadas
+                                        </ol>
+                                        <ol>
+                                            Otimização de performance para
+                                            scalping
+                                        </ol>
+                                        <ol>
+                                            Troubleshooting de plugins como
+                                            Replikanto, Jigsaw, OrderFlowBot,
+                                            etc.
+                                        </ol>
+                                    </ul>
+                                    <p>
+                                        Suporte humano 24/7 via WhatsApp. Sem
+                                        tickets, sem espera de 48h, sem robôs.
+                                        Você fala direto com quem entende do
+                                        assunto.
+                                    </p>
+                                    <p>Exemplos do que já resolvemos:</p>
+                                    <ul>
+                                        <ol>
+                                            "Meu Replikanto não está replicando
+                                            as ordens" → Resolvido em 10 minutos
+                                        </ol>
+                                        <ol>
+                                            "O NinjaTrader está lento ao abrir
+                                            múltiplos gráficos" → Ajustamos a
+                                            alocação de RAM
+                                        </ol>
+                                        <ol>
+                                            "Não consigo conectar no Rithmic" →
+                                            Configuramos as portas e firewall
+                                        </ol>
+                                    </ul>
+                                </div>
+                            </AccordionContent>
+                        </AccordionItem>
+
+                        <AccordionItem
+                            className="mb-4 border-solid border-none bg-zinc-950 p-4 text-white"
+                            value="item-5"
+                        >
+                            <AccordionTrigger>
+                                Q5: A VPS fica ligada 24 horas? Preciso
+                                desligar?
+                            </AccordionTrigger>
+                            <AccordionContent>
+                                <div className="flex flex-col gap-4">
+                                    <p>
+                                        R: A VPS roda 24/7 sem interrupção. Você
+                                        NÃO precisa desligar ou deslogar.
+                                    </p>
+                                    <p>Por que isso é importante?</p>
+                                    <ul>
+                                        <li>
+                                            Robôs e estratégias automatizadas
+                                            continuam rodando mesmo quando você
+                                            fecha a conexão remota
+                                        </li>
+                                        <li>
+                                            O NinjaTrader permanece conectado ao
+                                            mercado, recebendo dados em tempo
+                                            real
+                                        </li>
+                                        <li>
+                                            Você não perde conexão se sua
+                                            internet local cair ou se você
+                                            fechar o notebook
+                                        </li>
+                                    </ul>
+                                    <p>Como funciona na prática:</p>
+                                    <ul>
+                                        <li>
+                                            Você conecta na VPS pelo celular/PC
+                                        </li>
+                                        <li>
+                                            Abre o NinjaTrader e deixa suas
+                                            estratégias rodando
+                                        </li>
+                                        <li>
+                                            Fecha o aplicativo Remote Desktop no
+                                            seu dispositivo
+                                        </li>
+                                        <li>
+                                            O servidor continua operando
+                                            normalmente (como se você tivesse
+                                            deixado um PC ligado 24h)
+                                        </li>
+                                    </ul>
+                                    <p>
+                                        Isso é ideal para quem opera no
+                                        overnight, usa trailing stops
+                                        automatizados ou quer monitorar o
+                                        mercado sem ficar preso ao computador.
+                                    </p>
+                                </div>
+                            </AccordionContent>
+                        </AccordionItem>
+
+                        <AccordionItem
+                            className="mb-4 border-solid border-none bg-zinc-950 p-4 text-white"
+                            value="item-6"
+                        >
+                            <AccordionTrigger>
+                                Q6: Qual a diferença entre essa VPS e uma VPS
+                                comum da Amazon/Google?
+                            </AccordionTrigger>
+                            <AccordionContent>
+                                <div className="flex flex-col gap-4">
+                                    <p>
+                                        R: A diferença está na otimização
+                                        cirúrgica que fizemos no sistema
+                                        operacional. É como comparar um carro de
+                                        rua com um carro de Fórmula 1.
+                                    </p>
+
+                                    <p>VPS comum (AWS, Google Cloud, Azure):</p>
+
+                                    <ul>
+                                        <li>
+                                            - Windows "puro", sem otimizações
+                                        </li>
+                                        <li>
+                                            - Desperdiça CPU/RAM com logs, sons,
+                                            atualizações automáticas
+                                        </li>
+                                        <li>
+                                            - Antivírus escaneia cada tick de
+                                            mercado que chega
+                                        </li>
+                                        <li>
+                                            - Você precisa configurar tudo
+                                            manualmente (instalar NT, otimizar
+                                            rede, ajustar prioridades)
+                                        </li>
+                                        <li>
+                                            - Suporte genérico de TI (não
+                                            entendem de trading)
+                                        </li>
+                                    </ul>
+                                    <p>VPS Trader Ninja:</p>
+                                    <ul>
+                                        <li>
+                                            - "Lobotomia" de I/O: Bloqueamos
+                                            fisicamente a gravação de logs e
+                                            sons inúteis
+                                        </li>
+                                        <li>
+                                            - Prioridade de CPU "High":
+                                            NinjaTrader tem preferência absoluta
+                                            sobre processos do Windows
+                                        </li>
+                                        <li>
+                                            - Protocolo UDP ativado: Menor
+                                            latência que TCP (padrão em VPS
+                                            comuns)
+                                        </li>
+                                        <li>
+                                            - Windows Defender com exclusões:
+                                            Não escaneia o NinjaTrader (elimina
+                                            micro-travamentos)
+                                        </li>
+                                        <li>
+                                            - NinjaTrader pré-instalado com
+                                            Plugin Net Time (delay 0,01 a 0,06s)
+                                        </li>
+                                        <li>
+                                            - Suporte especializado em trading
+                                            via WhatsApp 24/7
+                                        </li>
+                                    </ul>
+                                    <p>
+                                        Resultado: Você tem a performance de um
+                                        servidor institucional, mas com a
+                                        facilidade de um serviço plug-and-play.
+                                    </p>
+                                </div>
+                            </AccordionContent>
+                        </AccordionItem>
+
+                        <AccordionItem
+                            className="mb-4 border-solid border-none bg-zinc-950 p-4 text-white"
+                            value="item-7"
+                        >
+                            <AccordionTrigger>
+                                Q7: Posso cancelar a qualquer momento?
+                            </AccordionTrigger>
+                            <AccordionContent>
+                                <div className="flex flex-col gap-4">
+                                    <p>
+                                        R: Sim, sem burocracia. O serviço é
+                                        mensal e sem fidelidade.
+                                    </p>
+                                    <p>
+                                        Você pode cancelar quando quiser. Não há
+                                        multa, taxa de cancelamento ou "letras
+                                        miúdas".
+                                    </p>
+                                    <p>Como funciona:</p>
+                                    <ul>
+                                        <li>
+                                            - Você contrata e paga mensalmente
+                                            (R$ 150/mês)
+                                        </li>
+                                        <li>
+                                            - Se decidir cancelar, basta avisar
+                                            via WhatsApp
+                                        </li>
+                                        <li>
+                                            - Seu acesso permanece ativo até o
+                                            final do período pago
+                                        </li>
+                                        <li>
+                                            - Não há renovação automática
+                                            forçada (você escolhe se quer
+                                            continuar)
+                                        </li>
+                                    </ul>
+                                    <p>
+                                        Nosso objetivo é que você fique porque a
+                                        VPS resolve seu problema de performance,
+                                        não porque está preso em um contrato.
+                                    </p>
+                                </div>
+                            </AccordionContent>
+                        </AccordionItem>
+
+                        <AccordionItem
+                            className="mb-4 border-solid border-none bg-zinc-950 p-4 text-white"
+                            value="item-8"
+                        >
+                            <AccordionTrigger>
+                                Q8: Vocês oferecem garantia de uptime (tempo
+                                online)?
+                            </AccordionTrigger>
+                            <AccordionContent>
+                                <div className="flex flex-col gap-4">
+                                    <p>R: Sim. Garantia de 99,9% de uptime.</p>
+                                    <p>
+                                        Nossos servidores ficam em datacenters
+                                        de nível empresarial nos EUA (região
+                                        central, próximo a Chicago), com:
+                                    </p>
+                                    <ul>
+                                        <li>
+                                            - Redundância de energia (geradores
+                                            backup)
+                                        </li>
+                                        <li>
+                                            - Conexão de rede redundante
+                                            (múltiplos provedores)
+                                        </li>
+                                        <li>
+                                            - Monitoramento 24/7 por nossa
+                                            equipe
+                                        </li>
+                                    </ul>
+                                    <p>E se houver algum problema?</p>
+                                    <ul>
+                                        <li>
+                                            - Em caso de manutenção programada
+                                            (rara), avisamos com antecedência
+                                            mínima de 48h
+                                        </li>
+                                        <li>
+                                            - Se houver qualquer problema de
+                                            infraestrutura não programado, nosso
+                                            time age imediatamente e você é
+                                            notificado via WhatsApp
+                                        </li>
+                                    </ul>
+                                    <p>
+                                        Histórico: Nos últimos 12 meses, tivemos
+                                        menos de 2 horas de downtime total
+                                        (99,98% de uptime real).
+                                    </p>
+                                </div>
+                            </AccordionContent>
+                        </AccordionItem>
+
+                        <AccordionItem
+                            className="mb-4 border-solid border-none bg-zinc-950 p-4 text-white"
+                            value="item-9"
+                        >
+                            <AccordionTrigger>
+                                Q9: Posso instalar outros softwares além do
+                                NinjaTrader?
+                            </AccordionTrigger>
+                            <AccordionContent>
+                                <div className="flex flex-col gap-4">
+                                    <p>
+                                        R: Sim, você tem acesso administrativo
+                                        completo. A VPS é sua.
+                                    </p>
+                                    <p>
+                                        Você pode instalar o que precisar para
+                                        sua operação:
+                                    </p>
+                                    <ul>
+                                        <li>
+                                            - TradingView (para análises
+                                            complementares)
+                                        </li>
+                                        <li>
+                                            - Excel/Google Sheets (para
+                                            planilhas de controle)
+                                        </li>
+                                        <li>
+                                            - Discord, Telegram, WhatsApp Web
+                                            (para grupos de trading)
+                                        </li>
+                                        <li>
+                                            - Outros terminais (se você opera
+                                            múltiplos mercados)
+                                        </li>
+                                        <li>
+                                            - Softwares de gravação de tela
+                                            (para revisar suas operações)
+                                        </li>
+                                    </ul>
+                                    <p>
+                                        Recomendação: Evite instalar softwares
+                                        pesados que não sejam essenciais para
+                                        trading (jogos, editores de vídeo,
+                                        etc.). A ideia é manter 100% dos
+                                        recursos focados em performance de
+                                        execução.
+                                    </p>
+                                    <p>
+                                        Se tiver dúvida se algo vai impactar a
+                                        performance, pergunte no WhatsApp antes
+                                        de instalar. Nosso time te orienta.
+                                    </p>
+                                </div>
+                            </AccordionContent>
+                        </AccordionItem>
+
+                        <AccordionItem
+                            className="mb-4 border-solid border-none bg-zinc-950 p-4 text-white"
+                            value="item-10"
+                        >
+                            <AccordionTrigger>
+                                Q10: Como funciona a segurança contra ataques
+                                DDoS?
+                            </AccordionTrigger>
+                            <AccordionContent>
+                                <div className="flex flex-col gap-4">
+                                    <p>
+                                        R: Implementamos múltiplas camadas de
+                                        segurança:
+                                    </p>
+                                    <p>1. Bloqueio de acesso via navegador</p>
+                                    <ul>
+                                        <li>
+                                            - Você só consegue conectar usando o
+                                            aplicativo Windows App (RDP)
+                                        </li>
+                                        <li>
+                                            - Isso elimina 99% dos vetores de
+                                            ataque comuns (phishing, exploits de
+                                            navegador, etc.)
+                                        </li>
+                                        <li>
+                                            - Hackers não conseguem "adivinhar"
+                                            sua senha via tentativa e erro na
+                                            web
+                                        </li>
+                                    </ul>
+                                    <p>2. Proteção DDoS de nível empresarial</p>
+                                    <ul>
+                                        <li>
+                                            - Nossos servidores ficam em
+                                            datacenters com filtragem de tráfego
+                                            malicioso
+                                        </li>
+                                        <li>
+                                            - Ataques DDoS são mitigados
+                                            automaticamente antes de chegarem ao
+                                            seu servidor
+                                        </li>
+                                    </ul>
+                                    <p>3. Firewall configurado para trading</p>
+                                    <ul>
+                                        <li>
+                                            - Apenas as portas necessárias para
+                                            NinjaTrader e RDP estão abertas
+                                        </li>
+                                        <li>
+                                            - Todo o resto é bloqueado por
+                                            padrão
+                                        </li>
+                                    </ul>
+                                    <p>4. Credenciais seguras</p>
+                                    <ul>
+                                        <li>
+                                            - Senhas fortes geradas
+                                            automaticamente
+                                        </li>
+                                        <li>
+                                            - Você pode (e deve) alterar a senha
+                                            após o primeiro acesso
+                                        </li>
+                                    </ul>
+                                    <p>
+                                        Resultado: Sua estação de trabalho fica
+                                        em um "bunker digital". Você opera com
+                                        tranquilidade, sabendo que sua
+                                        infraestrutura está protegida.
+                                    </p>
+                                </div>
                             </AccordionContent>
                         </AccordionItem>
                     </Accordion>
