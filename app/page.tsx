@@ -152,8 +152,8 @@ export default function Home() {
 
                     <CardV2
                         icon={ArrowUpDown}
-                        title="Protocolo UDP"
-                        desc="Otimização de rede para pacotes UDP, garantindo a
+                        title="Protocolo TCP"
+                        desc="Otimização de rede para pacotes TCP, garantindo a
                             entrega mais rápida possível de dados de mercado
                             (L1/L2)."
                     />
@@ -234,7 +234,7 @@ export default function Home() {
 
                         <div className="flex flex-col justify-between gap-4">
                             <CardCheckV1
-                                title="Windows Server 2022 Otimizado"
+                                title="Windows 10 Otimizado"
                                 desc="Sem bloatware, configurado para máxima
                                         performance."
                             />
