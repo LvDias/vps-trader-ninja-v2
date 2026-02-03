@@ -14,6 +14,25 @@ export const metadata: Metadata = {
     title: "VPS de Alta Performance | Latência Zero na CME",
     description:
         "Opere futuros na velocidade da luz. VPS localizada em Chicago com 1-2ms de latência, otimizada para NinjaTrader e execução algorítmica. Elimine o slippage hoje.",
+    icons: {
+        icon: "/icon.svg",
+    },
+    openGraph: {
+        title: "VPS de Alta Performance | Latência Zero na CME",
+        description:
+            "Opere futuros na velocidade da luz. VPS localizada em Chicago com 1-2ms de latência, otimizada para NinjaTrader e execução algorítmica. Elimine o slippage hoje.",
+        images: [
+            {
+                url: "/VPS-NINJA.webp",
+                width: 1200,
+                height: 630,
+                alt: "VPS Trader Ninja",
+            },
+        ],
+        locale: "pt_BR",
+        type: "website",
+        siteName: "VPS Trader Ninja",
+    },
 }
 
 export default function RootLayout({

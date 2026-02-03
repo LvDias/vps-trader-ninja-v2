@@ -14,6 +14,10 @@ export function CleanChart() {
     useEffect(() => {
         if (!chartContainerRef.current) return
 
+        const isMobile = window.innerWidth < 768
+        const candleCount = isMobile ? 40 : 100
+        const barSpacing = isMobile ? 15 : 10
+
         const chart = createChart(chartContainerRef.current, {
             layout: {
                 background: { type: ColorType.Solid, color: "transparent" },
@@ -29,7 +33,7 @@ export function CleanChart() {
             timeScale: {
                 visible: false,
                 rightOffset: 0,
-                barSpacing: 10,
+                barSpacing: barSpacing,
                 fixLeftEdge: true,
                 lockVisibleTimeRangeOnResize: true,
             },
@@ -54,10 +58,10 @@ export function CleanChart() {
         })
 
         const data: any[] = []
-        const time = Math.floor(Date.now() / 1000) - 100 * 60
+        const time = Math.floor(Date.now() / 1000) - candleCount * 60
         let previousClose = 1000
 
-        for (let i = 0; i < 100; i++) {
+        for (let i = 0; i < candleCount; i++) {
             const open = previousClose
             const change = (Math.random() - 0.5) * 10
             const close = open + change
