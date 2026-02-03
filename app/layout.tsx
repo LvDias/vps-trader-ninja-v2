@@ -17,6 +17,7 @@ export const metadata: Metadata = {
     icons: {
         icon: "/icon.svg",
     },
+    metadataBase: new URL("https://vpstrader.ninja"),
     openGraph: {
         title: "VPS de Alta Performance | Latência Zero na CME",
         description:
