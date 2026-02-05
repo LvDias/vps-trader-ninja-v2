@@ -1,13 +1,15 @@
-import { Phone } from "lucide-react"
+import Image from "next/image"
 import Link from "next/link"
 
 export function WhatsappButton() {
     return (
         <Link
-            className="fixed right-4 bottom-4 z-10 flex size-16 items-center justify-center rounded-full border border-white border-solid bg-green-500 text-white"
+            className="fixed right-4 bottom-4 z-10 flex size-16 items-center justify-center rounded-full bg-white"
             href={process.env.LINK_WHATSAPP!}
         >
-            <Phone className="size-8" />
+            <picture className="relative size-8">
+                <Image fill src="/whatsapp.svg" alt="Whatsapp" />
+            </picture>
         </Link>
     )
 }
