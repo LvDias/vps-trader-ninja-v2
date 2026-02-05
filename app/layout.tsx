@@ -4,6 +4,7 @@ import "./globals.css"
 import Script from "next/script"
 import { Footer } from "./@components/footer"
 import { Header } from "./@components/header"
+import { WhatsappButton } from "./@components/whatsapp"
 
 const roboto = Roboto({
     variable: "--font-roboto",
@@ -70,6 +71,8 @@ export default function RootLayout({
                 <Header />
                 {children}
                 <Footer />
+
+                <WhatsappButton />
             </body>
         </html>
     )
