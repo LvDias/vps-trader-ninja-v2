@@ -56,7 +56,7 @@ export default function Home() {
                 </div>
 
                 <Button className="z-10" size="lg" asChild>
-                    <Link href={process.env.LINK_CHECKOUT!}>
+                    <Link href={process.env.NEXT_PUBLIC_LINK_CHECKOUT!}>
                         Quero operar sem lag
                     </Link>
                 </Button>
@@ -280,7 +280,7 @@ export default function Home() {
                         </div>
                         <div className="flex flex-col gap-2">
                             <Button size="lg" asChild>
-                                <Link href={process.env.LINK_CHECKOUT!}>
+                                <Link href={process.env.NEXT_PUBLIC_LINK_CHECKOUT!}>
                                     Assinar Agora
                                 </Link>
                             </Button>
@@ -296,7 +296,7 @@ export default function Home() {
                         </h4>
 
                         <CardCheckV2 title="4 vCPU Cores (Alta Prioridade)" />
-                        <CardCheckV2 title="8 GB RAM" />
+                        <CardCheckV2 title="6 GB RAM" />
                         <CardCheckV2 title="60 GB NVMe Storage" />
                         <CardCheckV2 title="Suporte dedicado via Whatsapp" />
                         <CardCheckV2 title="Setup em até 1 hora" />
