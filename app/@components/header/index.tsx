@@ -10,7 +10,7 @@ export function Header() {
                 </span>
 
                 <Button size="lg" asChild>
-                    <Link href={process.env.LINK_CHECKOUT!}>Assinar Agora</Link>
+                    <Link href={process.env.NEXT_PUBLIC_LINK_CHECKOUT!}>Assinar Agora</Link>
                 </Button>
             </div>
         </header>
