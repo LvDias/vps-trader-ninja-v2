@@ -266,26 +266,29 @@ export default function Home() {
 
                 <div className="grid grid-cols-1 items-center gap-4 rounded border border-orange-500 border-solid p-4 md:gap-8 md:p-8 lg:grid-cols-2">
                     <div className="flex flex-col gap-4">
-                        <div className="flex flex-col items-center gap-2 md:items-start">
+                        <div className="flex flex-col items-center gap-2 text-center">
                             <p className="text-white text-xl md:text-2xl">
                                 Plano Trader Pro
                             </p>
                             <span className="text-white/80 text-xs">
                                 R$
                                 <span className="font-bold text-4xl text-white md:text-6xl">
-                                    150,00
+                                    35,00
                                 </span>
-                                /mês
                             </span>
                         </div>
                         <div className="flex flex-col gap-2">
                             <Button size="lg" asChild>
-                                <Link href={process.env.NEXT_PUBLIC_LINK_CHECKOUT!}>
+                                <Link
+                                    href={
+                                        process.env.NEXT_PUBLIC_LINK_CHECKOUT!
+                                    }
+                                >
                                     Assinar Agora
                                 </Link>
                             </Button>
                             <p className="text-white/50 text-xs">
-                                Cancelamento gratuito a qualquer momento.
+                                Na primeira compra depois sobe para R$150,00
                             </p>
                         </div>
                     </div>
