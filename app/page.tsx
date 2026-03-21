@@ -273,7 +273,7 @@ export default function Home() {
                             <span className="text-white/80 text-xs">
                                 R$
                                 <span className="font-bold text-4xl text-white md:text-6xl">
-                                    35,00
+                                    150,00
                                 </span>
                             </span>
                         </div>
